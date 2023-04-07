@@ -1,0 +1,39 @@
+.card{
+    width: 344px;
+    border-radius: 16px;
+}
+
+.card img{
+    display:block;
+    opacity:1;
+    width: 100%;
+    height: auto;
+    transition:0.5s;
+    bordborder-radius: 16px;
+}
+
+.card .overLay{
+    position: absolute;
+    padding:24px;
+    opacity:0;
+    top:50%;
+    left:50%;
+    transition:0.5s;
+    transform: translate(-50%, -50%);
+}
+
+.card .overLay button {
+    color:red;
+    background: purple;
+    padding:12px 24px;
+    border:none;
+    border-radius: 8px;
+}
+
+.card: hover img{
+    opacity:0.32;
+}
+
+.card:hover .overLay{
+    opacity:1;
+}
